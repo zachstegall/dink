@@ -14,7 +14,8 @@
 		CD4D89631FEF1594007E5E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */; };
 		CD4D896E1FEF1595007E5E07 /* DinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D896D1FEF1595007E5E07 /* DinkTests.swift */; };
 		CD4D89791FEF1595007E5E07 /* DinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D89781FEF1595007E5E07 /* DinkUITests.swift */; };
-		EEFF80051FEF1B180060C93A /* BluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; };
+		CDF88B501FEF202100A83CDA /* BluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; };
+		CDF88B511FEF202100A83CDA /* BluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,20 @@
 			remoteInfo = Dink;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDF88B521FEF202100A83CDA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDF88B511FEF202100A83CDA /* BluetoothKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD4D89551FEF1594007E5E07 /* Dink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEFF80051FEF1B180060C93A /* BluetoothKit.framework in Frameworks */,
+				CDF88B501FEF202100A83CDA /* BluetoothKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +154,7 @@
 				CD4D89511FEF1594007E5E07 /* Sources */,
 				CD4D89521FEF1594007E5E07 /* Frameworks */,
 				CD4D89531FEF1594007E5E07 /* Resources */,
+				CDF88B521FEF202100A83CDA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
