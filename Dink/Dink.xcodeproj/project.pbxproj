@@ -14,8 +14,15 @@
 		CD4D89631FEF1594007E5E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */; };
 		CD4D896E1FEF1595007E5E07 /* DinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D896D1FEF1595007E5E07 /* DinkTests.swift */; };
 		CD4D89791FEF1595007E5E07 /* DinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D89781FEF1595007E5E07 /* DinkUITests.swift */; };
-		CDF88B501FEF202100A83CDA /* BluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; };
-		CDF88B511FEF202100A83CDA /* BluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEFF80271FEF23D10060C93A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; };
+		EEFF80281FEF23D10060C93A /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; };
+		EEFF80291FEF23D10060C93A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; };
+		EEFF802A1FEF23D70060C93A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; };
+		EEFF802B1FEF23D70060C93A /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEFF802C1FEF23D70060C93A /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; };
+		EEFF802D1FEF23D70060C93A /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEFF802E1FEF23D70060C93A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; };
+		EEFF802F1FEF23D70060C93A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CDF88B521FEF202100A83CDA /* Embed Frameworks */ = {
+		EEFF80301FEF23D70060C93A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDF88B511FEF202100A83CDA /* BluetoothKit.framework in Embed Frameworks */,
+				EEFF802D1FEF23D70060C93A /* RxBluetoothKit.framework in Embed Frameworks */,
+				EEFF802B1FEF23D70060C93A /* RxBlocking.framework in Embed Frameworks */,
+				EEFF802F1FEF23D70060C93A /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +72,9 @@
 		CD4D89741FEF1595007E5E07 /* DinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D89781FEF1595007E5E07 /* DinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinkUITests.swift; sourceTree = "<group>"; };
 		CD4D897A1FEF1595007E5E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEFF80041FEF1B180060C93A /* BluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothKit.framework; path = Dependencies/BluetoothKit.framework; sourceTree = "<group>"; };
+		EEFF80241FEF23D00060C93A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Dependencies/RxBlocking.framework; sourceTree = "<group>"; };
+		EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Dependencies/RxBluetoothKit.framework; sourceTree = "<group>"; };
+		EEFF80261FEF23D10060C93A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Dependencies/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF88B501FEF202100A83CDA /* BluetoothKit.framework in Frameworks */,
+				EEFF80281FEF23D10060C93A /* RxBluetoothKit.framework in Frameworks */,
+				EEFF80271FEF23D10060C93A /* RxBlocking.framework in Frameworks */,
+				EEFF802E1FEF23D70060C93A /* RxSwift.framework in Frameworks */,
+				EEFF802C1FEF23D70060C93A /* RxBluetoothKit.framework in Frameworks */,
+				EEFF80291FEF23D10060C93A /* RxSwift.framework in Frameworks */,
+				EEFF802A1FEF23D70060C93A /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +111,9 @@
 		CD4D894C1FEF1594007E5E07 = {
 			isa = PBXGroup;
 			children = (
-				EEFF80041FEF1B180060C93A /* BluetoothKit.framework */,
+				EEFF80241FEF23D00060C93A /* RxBlocking.framework */,
+				EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */,
+				EEFF80261FEF23D10060C93A /* RxSwift.framework */,
 				CD4D89571FEF1594007E5E07 /* Dink */,
 				CD4D896C1FEF1595007E5E07 /* DinkTests */,
 				CD4D89771FEF1595007E5E07 /* DinkUITests */,
@@ -154,7 +172,7 @@
 				CD4D89511FEF1594007E5E07 /* Sources */,
 				CD4D89521FEF1594007E5E07 /* Frameworks */,
 				CD4D89531FEF1594007E5E07 /* Resources */,
-				CDF88B521FEF202100A83CDA /* Embed Frameworks */,
+				EEFF80301FEF23D70060C93A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
