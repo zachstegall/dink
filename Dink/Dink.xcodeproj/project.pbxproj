@@ -194,6 +194,11 @@
 					CD4D89541FEF1594007E5E07 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					CD4D89681FEF1595007E5E07 = {
 						CreatedOnToolsVersion = 8.1;
@@ -505,6 +510,7 @@
 				CD4D897F1FEF1595007E5E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4D89801FEF1595007E5E07 /* Build configuration list for PBXNativeTarget "DinkTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				CD4D89821FEF1595007E5E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4D89831FEF1595007E5E07 /* Build configuration list for PBXNativeTarget "DinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				CD4D89851FEF1595007E5E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
