@@ -14,6 +14,7 @@
 		CD4D89631FEF1594007E5E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */; };
 		CD4D896E1FEF1595007E5E07 /* DinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D896D1FEF1595007E5E07 /* DinkTests.swift */; };
 		CD4D89791FEF1595007E5E07 /* DinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D89781FEF1595007E5E07 /* DinkUITests.swift */; };
+		EEFF80051FEF1B180060C93A /* BluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80041FEF1B180060C93A /* BluetoothKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CD4D89741FEF1595007E5E07 /* DinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D89781FEF1595007E5E07 /* DinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinkUITests.swift; sourceTree = "<group>"; };
 		CD4D897A1FEF1595007E5E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEFF80041FEF1B180060C93A /* BluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothKit.framework; path = Dependencies/BluetoothKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFF80051FEF1B180060C93A /* BluetoothKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		CD4D894C1FEF1594007E5E07 = {
 			isa = PBXGroup;
 			children = (
+				EEFF80041FEF1B180060C93A /* BluetoothKit.framework */,
 				CD4D89571FEF1594007E5E07 /* Dink */,
 				CD4D896C1FEF1595007E5E07 /* DinkTests */,
 				CD4D89771FEF1595007E5E07 /* DinkUITests */,
@@ -193,6 +197,7 @@
 				TargetAttributes = {
 					CD4D89541FEF1594007E5E07 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F3LLLV4689;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -417,6 +422,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3LLLV4689;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependancies",
+					"$(PROJECT_DIR)/Dependencies",
+				);
 				INFOPLIST_FILE = Dink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dinkinc.Dink;
@@ -429,6 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3LLLV4689;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependancies",
+					"$(PROJECT_DIR)/Dependencies",
+				);
 				INFOPLIST_FILE = Dink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dinkinc.Dink;
