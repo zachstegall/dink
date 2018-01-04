@@ -14,15 +14,7 @@
 		CD4D89631FEF1594007E5E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */; };
 		CD4D896E1FEF1595007E5E07 /* DinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D896D1FEF1595007E5E07 /* DinkTests.swift */; };
 		CD4D89791FEF1595007E5E07 /* DinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D89781FEF1595007E5E07 /* DinkUITests.swift */; };
-		EEFF80271FEF23D10060C93A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; };
-		EEFF80281FEF23D10060C93A /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; };
-		EEFF80291FEF23D10060C93A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; };
-		EEFF802A1FEF23D70060C93A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; };
-		EEFF802B1FEF23D70060C93A /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80241FEF23D00060C93A /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EEFF802C1FEF23D70060C93A /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; };
-		EEFF802D1FEF23D70060C93A /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EEFF802E1FEF23D70060C93A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; };
-		EEFF802F1FEF23D70060C93A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF80261FEF23D10060C93A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDF88B751FEF2AF500A83CDA /* Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF88B741FEF2AF500A83CDA /* Central.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EEFF802D1FEF23D70060C93A /* RxBluetoothKit.framework in Embed Frameworks */,
-				EEFF802B1FEF23D70060C93A /* RxBlocking.framework in Embed Frameworks */,
-				EEFF802F1FEF23D70060C93A /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +61,7 @@
 		CD4D89741FEF1595007E5E07 /* DinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D89781FEF1595007E5E07 /* DinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinkUITests.swift; sourceTree = "<group>"; };
 		CD4D897A1FEF1595007E5E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEFF80241FEF23D00060C93A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Dependencies/RxBlocking.framework; sourceTree = "<group>"; };
-		EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Dependencies/RxBluetoothKit.framework; sourceTree = "<group>"; };
-		EEFF80261FEF23D10060C93A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Dependencies/RxSwift.framework; sourceTree = "<group>"; };
+		CDF88B741FEF2AF500A83CDA /* Central.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Central.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEFF80281FEF23D10060C93A /* RxBluetoothKit.framework in Frameworks */,
-				EEFF80271FEF23D10060C93A /* RxBlocking.framework in Frameworks */,
-				EEFF802E1FEF23D70060C93A /* RxSwift.framework in Frameworks */,
-				EEFF802C1FEF23D70060C93A /* RxBluetoothKit.framework in Frameworks */,
-				EEFF80291FEF23D10060C93A /* RxSwift.framework in Frameworks */,
-				EEFF802A1FEF23D70060C93A /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +92,6 @@
 		CD4D894C1FEF1594007E5E07 = {
 			isa = PBXGroup;
 			children = (
-				EEFF80241FEF23D00060C93A /* RxBlocking.framework */,
-				EEFF80251FEF23D00060C93A /* RxBluetoothKit.framework */,
-				EEFF80261FEF23D10060C93A /* RxSwift.framework */,
 				CD4D89571FEF1594007E5E07 /* Dink */,
 				CD4D896C1FEF1595007E5E07 /* DinkTests */,
 				CD4D89771FEF1595007E5E07 /* DinkUITests */,
@@ -136,6 +114,7 @@
 			children = (
 				CD4D89581FEF1594007E5E07 /* AppDelegate.swift */,
 				CD4D895A1FEF1594007E5E07 /* ViewController.swift */,
+				CDF88B741FEF2AF500A83CDA /* Central.swift */,
 				CD4D895C1FEF1594007E5E07 /* Main.storyboard */,
 				CD4D895F1FEF1594007E5E07 /* Assets.xcassets */,
 				CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */,
@@ -231,7 +210,7 @@
 				TargetAttributes = {
 					CD4D89541FEF1594007E5E07 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = F3LLLV4689;
+						DevelopmentTeam = L2NW3G6MD6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -305,6 +284,7 @@
 			files = (
 				CD4D895B1FEF1594007E5E07 /* ViewController.swift in Sources */,
 				CD4D89591FEF1594007E5E07 /* AppDelegate.swift in Sources */,
+				CDF88B751FEF2AF500A83CDA /* Central.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F3LLLV4689;
+				DEVELOPMENT_TEAM = L2NW3G6MD6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependancies",
@@ -474,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F3LLLV4689;
+				DEVELOPMENT_TEAM = L2NW3G6MD6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependancies",

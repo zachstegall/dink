@@ -7,27 +7,29 @@
 //
 
 import UIKit
-import RxBluetoothKit
-import RxSwift
-import CoreBluetooth
 
 class ViewController: UIViewController {
+    /*
     private var isScanInProgress = false
     private var scheduler: ConcurrentDispatchQueueScheduler!
     private let manager = BluetoothManager(queue: .main)
     private var scanningDisposable: Disposable?
     fileprivate var peripheralsArray: [ScannedPeripheral] = []
     fileprivate let scannedPeripheralCellIdentifier = "peripheralCellId"
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /*
         let timerQueue = DispatchQueue(label: "com.polidea.rxbluetoothkit.timer")
         scheduler = ConcurrentDispatchQueueScheduler(queue: timerQueue)
 
-         startScanning()
+        startScanning()
+        */
     }
 
+    /*
     private func stopScanning() {
         scanningDisposable?.dispose()
         isScanInProgress = false
@@ -62,4 +64,5 @@ class ViewController: UIViewController {
 //            self.scansTableView.reloadData()
 //        }
     }
+    */
 }
