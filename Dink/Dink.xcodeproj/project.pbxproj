@@ -14,6 +14,8 @@
 		CD4D89631FEF1594007E5E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D89611FEF1594007E5E07 /* LaunchScreen.storyboard */; };
 		CD4D896E1FEF1595007E5E07 /* DinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D896D1FEF1595007E5E07 /* DinkTests.swift */; };
 		CD4D89791FEF1595007E5E07 /* DinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D89781FEF1595007E5E07 /* DinkUITests.swift */; };
+		CDAA7AD72001B0E400213153 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA7AD62001B0E300213153 /* OAuthSwift.framework */; };
+		CDAA7AD82001B0E400213153 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA7AD62001B0E300213153 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDF88B751FEF2AF500A83CDA /* Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF88B741FEF2AF500A83CDA /* Central.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EEFF80301FEF23D70060C93A /* Embed Frameworks */ = {
+		CD7FC37E2001AC46007BB92A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CDAA7AD82001B0E400213153 /* OAuthSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +64,7 @@
 		CD4D89741FEF1595007E5E07 /* DinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D89781FEF1595007E5E07 /* DinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinkUITests.swift; sourceTree = "<group>"; };
 		CD4D897A1FEF1595007E5E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDAA7AD62001B0E300213153 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthSwift.framework; sourceTree = "<group>"; };
 		CDF88B741FEF2AF500A83CDA /* Central.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Central.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAA7AD72001B0E400213153 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 		CD4D894C1FEF1594007E5E07 = {
 			isa = PBXGroup;
 			children = (
+				CDAA7AD62001B0E300213153 /* OAuthSwift.framework */,
 				CD4D89571FEF1594007E5E07 /* Dink */,
 				CD4D896C1FEF1595007E5E07 /* DinkTests */,
 				CD4D89771FEF1595007E5E07 /* DinkUITests */,
@@ -151,7 +157,7 @@
 				CD4D89511FEF1594007E5E07 /* Sources */,
 				CD4D89521FEF1594007E5E07 /* Frameworks */,
 				CD4D89531FEF1594007E5E07 /* Resources */,
-				EEFF80301FEF23D70060C93A /* Embed Frameworks */,
+				CD7FC37E2001AC46007BB92A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,6 +447,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependancies",
 					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Dink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +466,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependancies",
 					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Dink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

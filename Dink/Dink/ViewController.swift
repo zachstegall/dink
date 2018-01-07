@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuthSwift
 
 class ViewController: UIViewController {
     /*
@@ -17,18 +18,48 @@ class ViewController: UIViewController {
     fileprivate var peripheralsArray: [ScannedPeripheral] = []
     fileprivate let scannedPeripheralCellIdentifier = "peripheralCellId"
     */
-
+    
+    let goodreadskey    = "gJ85gJtras0GoExDP9sO7g"
+    let goodreadssecret = "dDAxzy8lVt9Rzhcwun1mmQ12O3lldkdAcLEzXt8n8"
+    
+    lazy var oauth: OAuth1Swift = {
+        return OAuth1Swift(
+            consumerKey: self.goodreadskey,
+            consumerSecret: self.goodreadssecret
+        )
+    }()
+    
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         /*
-        let timerQueue = DispatchQueue(label: "com.polidea.rxbluetoothkit.timer")
-        scheduler = ConcurrentDispatchQueueScheduler(queue: timerQueue)
-
-        startScanning()
-        */
+         let timerQueue = DispatchQueue(label: "com.polidea.rxbluetoothkit.timer")
+         scheduler = ConcurrentDispatchQueueScheduler(queue: timerQueue)
+         
+         startScanning()
+         */
     }
-
+    @IBAction func didTapGoodreads(_ sender: UIButton) {
+        let params: [String: Any] = [
+            "key": goodreadskey,
+            "q": "1250158060"
+        ]
+        let handle = oauth.client.get(
+            "https://www.goodreads.com/search/index.xml",
+            parameters: params,
+            headers: nil,
+            success: { response in
+                let dataString = response.string
+                self.textView.text = dataString
+            },
+            failure: { error in
+                self.textView.text = error.localizedDescription
+            }
+        )
+    }
+    
     /*
     private func stopScanning() {
         scanningDisposable?.dispose()
